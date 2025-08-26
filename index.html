@@ -1,68 +1,73 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obrigado pelo Acesso!</title>
-  
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1152304766910561'); 
-    fbq('track', 'Purchase');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1152304766910561&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
 
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parabéns! Clique para receber o produto</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
     }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
     h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      text-align: center;
+      color: #333;
+      margin-top: 0;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
+    
+    .product-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
     }
-    .btn-vip {
-      background-color: #0088cc;
-      color: white;
-      font-size: 1.2rem;
+    
+    .button {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
       padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
+      background-color: #4CAF50;
+      color: #fff;
       text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s ease;
     }
-    .btn-vip:hover {
-      background-color: #007ab8;
+    
+    .button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Parabéns!</h1>
+    <p>Você recebeu o seu produto com sucesso. Clique no botão abaixo para acessá-lo.</p>
+    <a href="https://t.me/+qkf9-q40HMM0MmQx" class="button" id="productButton">Acessar Produto</a>
+  </div>
 
-  <h1>🔥 Acesso Confirmado!</h1>
-  <p>Você agora faz parte dos VIPs que têm acesso ao meu Telegram mais quente 😈</p>
-  <a class="btn-vip" href="https://t.me/+9W1rzgf2eVdkZDIx" target="_blank">
-    Entrar no Grupo VIP 🔥
-  </a>
+  <script>
+    document.getElementById("productButton").addEventListener("click", function() {
+      alert("Você clicou no botão! O produto está a caminho.");
+      // Removi a linha que escondia o botão
+    });
+  </script>
 
+  <!-- Adicione aqui seus outros scripts, se necessário -->
 </body>
 </html>
